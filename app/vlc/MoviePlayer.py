@@ -58,6 +58,8 @@ class MoviePlayer(object):
 
         if path == '':
             path = filedialog.askdirectory()
+            with open(settings_path, 'w') as settings_file:
+                settings_file.write('path=' + path)
 
         return path
 
