@@ -112,7 +112,7 @@ class MoviePlayer(object):
                 self.vlc_player.stop()
                 self.index = self.index + 1
                 try:
-                    movie = self.movies[index]
+                    movie = self.movies[self.index]
                 except:
                     self.index = 0
                 self.play_movie()
